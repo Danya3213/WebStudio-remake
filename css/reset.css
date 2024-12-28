@@ -1,0 +1,26 @@
+body
+{
+    margin: 0px;
+}
+
+*
+{
+    margin: 0px;
+}
+
+button
+{
+    border: 0;
+    background-color: initial;
+}
+
+ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+input
+{
+    appearance: none
+}

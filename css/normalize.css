@@ -1,0 +1,16 @@
+*{
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+.container
+{
+    margin: 0 200px;
+    padding: 0 15px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
