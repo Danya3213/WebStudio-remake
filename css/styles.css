@@ -15,6 +15,25 @@
 
 /* header */
 
+/* поза курсами */
+
+header .container > ul li
+{
+    display: flex;
+    align-items: center;
+}
+
+header svg
+{
+    padding-right: 10px;
+    fill: #757575;
+}
+
+header .container > ul li:hover:first-of-type path
+{
+    fill: #2196F3;
+}
+
 header
 {
     border-bottom: 1px solid #ECECEC;

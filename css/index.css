@@ -101,6 +101,7 @@ main .info p
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
+    color: #757575;
 }
 
 main .info ul
@@ -118,6 +119,18 @@ main .info li
 
 /* section 3 */
 
+/* за межами курсів */
+
+main .what-we-do .container div
+{
+    height: 70px;
+    width: 370px;
+    align-content: center;
+    background-color: #2F303ACC;
+    position: absolute;
+    top: 224px;
+}
+
 main .what-we-do h2
 {
     font-size: 36px;
@@ -126,6 +139,17 @@ main .what-we-do h2
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
+}
+
+main .what-we-do h4
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 main .what-we-do .container
@@ -140,6 +164,14 @@ main .what-we-do ul
     justify-content: center;
     gap: 30px;
     margin-bottom: 94px;
+    position: relative;
+}
+
+main .what-we-do li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* section 4 */
