@@ -3,9 +3,35 @@
 
 /* section 1 */
 
+/* поза курсами */
+
 main .resolution
 {
+    background-image: url("../image/background.png");
+    height: initial;
+}
+
+main .resolution
+{
+    position: relative;
+}
+
+main .resolution::after
+{
+    content: '';
     background-color: #2F303A;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main .resolution .container
+{
+    z-index: 1;
+    position: relative;
 }
 
 main .resolution h1
@@ -45,6 +71,19 @@ main .resolution .container
 }
 
 /* section 2 */
+
+/* поза курсами */
+
+main .info .container div
+{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-content: center;
+    text-align: center;
+}
 
 main .info h5
 {
