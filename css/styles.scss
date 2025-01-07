@@ -1,9 +1,10 @@
-// @live
+// @use
 
-@use 'reset.scss';
-@use 'normalize.scss';
-@use 'index.scss';
-@use 'portfolio.scss';
+@import 
+    'reset', 
+    'normalize', 
+    'index',   
+    'portfolio';
 
 .main-title
 {
