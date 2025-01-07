@@ -1,22 +1,15 @@
-*{
-    font-family: 'Roboto';
-    color: #212121;
+* {
+  font-family: "Roboto";
+  color: #212121;
 }
 
-.container
-{
-    padding: 0 15px;
-    max-width: 1170px;
-    margin: 0 auto;
+.container {
+  padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-a
-{
-    text-decoration: none;
-    color: inherit;
-}
-
-/* body
-{
-    width: 1600px;
-} */
+a {
+  text-decoration: none;
+  color: inherit;
+}/*# sourceMappingURL=normalize.css.map */

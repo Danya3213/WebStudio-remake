@@ -1,0 +1,209 @@
+
+/* main index*/
+
+/* section 1 */
+
+/* поза курсами */
+
+main .resolution
+{
+    background-image: url("../image/background.png");
+    height: initial;
+    background-size: cover;
+}
+
+main .resolution
+{
+    position: relative;
+}
+
+main .resolution::after
+{
+    content: '';
+    background-color: #2F303A;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main .resolution .container
+{
+    z-index: 1;
+    position: relative;
+}
+
+main .resolution h1
+{
+    @include typography(44px, 900, 60px, 0.06em);
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+main .resolution button
+{
+    @include typography(16px, 700, 30px, 0.06em);
+    color: #FFFFFF;
+    background-color: $light-blue;
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+main .resolution .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+/* section 2 */
+
+/* поза курсами */
+
+main .info .container div
+{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-content: center;
+    text-align: center;
+}
+
+main .info h5
+{
+    @include typography(14px, 700, 16.41px, 0.03em);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+main .info p
+{
+    @include typography(14px, 400, 24px, 0.03em);
+    color: #757575;
+}
+
+main .info ul
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 94px 0;
+}
+
+main .info li
+{
+    width: 270px;
+}
+
+/* section 3 */
+
+/* за межами курсів */
+
+main .what-we-do .container div
+{
+    height: 70px;
+    width: 370px;
+    align-content: center;
+    background-color: #2F303ACC;
+    position: absolute;
+    top: 224px;
+}
+
+main .what-we-do h2
+{
+    @include typography(36px, 700, 42.19px, 0.03em);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main .what-we-do h4
+{
+    @include typography(14px, 700, 16.41px, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+main .what-we-do .container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main .what-we-do ul
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 94px;
+    position: relative;
+}
+
+main .what-we-do li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* section 4 */
+
+main #our-team
+{
+    background-color: #F5F4FA;
+    height: 648px;
+}
+
+main #our-team h2
+{
+    @include typography(36px, 700, 42.19px, 0.03em);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main #our-team h5
+{
+    @include typography(16px, 600, 18.75px, 0.03em);
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+main #our-team h6
+{
+    @include typography(16px, 400, 18.75px, 0.03em);
+    text-align: center;
+    color: #757575;
+    padding-bottom: 30px;
+}
+
+main #our-team .container
+{
+    padding: 94px 15px;
+}
+
+main #our-team ul
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+main #our-team li
+{
+    background-color: #FFFFFF;
+}

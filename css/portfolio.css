@@ -1,66 +1,60 @@
-
 /* main portfolio */
-
 /* article 1 */
-
-main .radio label
-{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding: 6px 22px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
-    cursor: pointer;
+main .radio label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  cursor: pointer;
+  padding: 6px 25px;
 }
 
-main .radio
-{
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin: 94px 0 50px;
+main .radio label:hover {
+  background-color: #2196f3;
+  color: #FFFFFF;
+}
+
+main .radio {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 94px 0 50px;
 }
 
 /* article 2 */
-
-main .projects h6
-{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0.06em;
+main .projects h6 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
 
-main .projects p
-{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    color: #757575;
+main .projects p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
-main .projects li div
-{
-    gap: 6px;
-    padding: 20px 24px;
+main .projects li div {
+  gap: 4px;
+  padding: 20px 24px;
 }
 
-main .projects ul
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 94px;
+main .projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 94px;
 }
 
-main .projects li
-{
-    border: 1px solid #EEEEEE;
-}
+main .projects li {
+  border: 1px solid #EEEEEE;
+}/*# sourceMappingURL=portfolio.css.map */
