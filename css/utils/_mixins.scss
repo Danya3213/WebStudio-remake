@@ -1,0 +1,34 @@
+@mixin circle {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@mixin x-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin y-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin box-shadow {
+
+    box-shadow:  var(--box-shadow-1), var(--box-shadow-2), var(--box-shadow-3);
+}
+
+@mixin typography ($font-size, $line-height, $color: var(--color-black)) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}

@@ -1,0 +1,180 @@
+.team {
+
+    padding: 94px 0;
+    background-color: var(--color-gray-light);
+
+    &__inner {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__main-title {
+
+        @include typography (36px, 42.2px);
+    }
+
+    &__list {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;  
+        
+        @media (max-width: 1220px) {
+            grid-column-gap: 20px;
+        }
+
+        @media (max-width: 1200px) {
+            grid-column-gap: 15px;
+        }
+
+        @include desktop {
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
+
+        @media (max-width: 800px) {
+            grid-column-gap: 15px;
+        }
+
+        @include tablet {
+
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-row-gap: 30px;
+        }
+    }
+
+    &__list-item {
+
+        background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        transition-duration: var(--transition-duration);
+
+        @include hover {
+
+            @include box-shadow;
+            transform: translateY(-10px);
+        }
+    }
+
+    &__item-image {
+
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__item-title {
+
+        @include typography (16px, 18.75px);
+        margin-bottom: 10px;
+
+        @include desktop {
+
+            @include typography (32px, 34px);
+        }
+
+        @media (max-width: 950px) {
+
+            @include typography (26px, 28px);
+        }
+
+        @include tablet {
+
+            @include typography (32px, 34px);
+        }
+
+        @media (max-width: 640px) {
+            
+            @include typography (28px, 30px);
+        }
+
+        @include mobile {
+
+            @include typography (22px, 24px);
+        }
+
+        @media (max-width: 320px) {
+
+            @include typography (16px, 18.75px);
+        }
+    }
+
+    &__item-subtitle {
+
+        @include typography (16px, 18.75px, var(--color-gray));
+        font-weight: 400;
+        margin-bottom: 16px;
+
+        @include desktop {
+
+            @include typography (25px, 27px);
+        }
+
+        @media (max-width: 950px) {
+
+            @include typography (20px, 22px);
+        }
+
+        @include tablet {
+
+            @include typography (25px, 27px);
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 640px) {
+            
+            @include typography (21px, 24px);
+        }
+
+        @include mobile {
+
+            @include typography (16px, 18.75px);
+        }
+    }
+
+    &__item-list {
+
+        display: flex;
+        gap: 10px;
+    }
+
+    &__item-list-item {
+
+        width: 44px;
+        height: 44px;
+        position: relative;
+        @include circle;
+        transition: var(--transition-duration) ease-in-out;
+        cursor: pointer;
+
+        @include hover {
+
+            background-color: var(--color-blue);
+
+            & path {
+
+                fill: var(--color-white);
+            }
+        }
+    }
+
+    &__item-svg {
+
+        @include abs-center;
+
+        & path {
+
+            fill: var(--color-gray-icon);
+        }
+    }
+}

@@ -1,122 +1,22 @@
 // @use
 
-@import 
-    'reset', 
-    'normalize', 
-    'index',   
-    'portfolio';
+@import
+    './utils/font',
+    './utils/reset',
+    './utils/variables',
+    './utils/globals',
+    './utils/media',
+    './utils/utils',
+    './utils/mixins';
 
-.main-title
-{
-    font-family: 'Raleway';
-    @include typography(26px, 700, 30.52px, 0.03em);
-    & span
-    {
-        color: $light-blue;
-    }
-}
-
-/* header */
-
-header
-{
-    border-bottom: 1px solid #ECECEC;
-
-    & .container
-    {
-        display: flex;
-        align-items: center;
-        height: 80px;
-        justify-content: space-between;
-    }    
-
-    & ul
-    {
-        display: flex;
-    }
-
-    & nav
-    {
-        display: flex;
-        align-items: center;
-    }
-
-    & .container > ul li
-    {
-        display: flex;
-        align-items: center;
-        margin-left: 50px;
-        color: #757575;
-        &:hover:first-of-type path
-        {
-            color: $light-blue;
-        }        
-    }
-
-    & svg
-    {
-        padding-right: 10px;
-        color: #757575;
-    } 
-    & a:nth-of-type(n+2)
-    {
-        @include typography(14px, 500, 16.41px, 0.02em);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 16.41px;
-        letter-spacing: 0.02em;
-    }   
-    & li
-    {
-        font-size: 14px;
-        font-weight: 600;
-        &:hover
-        {
-            color: $light-blue;
-        }
-    } 
-    & nav ul
-    {
-        margin-left: 93px;
-        gap: 50px;
-    }
-}
-
-
-/* footer */
-
-footer
-{
-    background-color: #2F303A;
-
-    & .container
-    {
-        padding: 60px 15px;
-    }
-
-    & .main-title
-    {
-        color: #FFFFFF;
-    }
-
-    & li
-    {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
-        &:nth-last-of-type(-n+2)
-        {
-            opacity: 60%;
-        }
-    }
-
-    & ul
-    {
-        display: flex;
-        flex-direction: column;
-        gap: 9px;
-        padding-top: 20px;
-    }
-}
+@import
+    './components/header',
+    './components/logo',
+    './components/resolution',
+    './components/info',
+    './components/about',
+    './components/team',
+    './components/clients',
+    './components/footer',
+    './components/radio',
+    './components/projects'

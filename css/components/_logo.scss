@@ -1,0 +1,14 @@
+.logo {
+
+    @include typography(26px, 30.5px);
+    font-weight: 700;
+    font-family: 'Raleway';
+    
+    & > span {
+
+        @include typography(26px, 30.5px);
+        font-weight: 700;
+        color: var(--color-blue);
+        font-family: 'Raleway';
+    }
+}

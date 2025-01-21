@@ -1,0 +1,42 @@
+.radio {
+
+    margin: 94px 0 50px;
+
+    &__list {
+
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+
+        @media (max-width: 650px) {
+            
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+    &__item-button {
+
+        padding: 6px 22px;
+        background-color: var(--color-gray-light);
+        border-radius: var(--border-radius);
+        min-width: 73px;
+        @include typography (16px, 26px);
+        letter-spacing: 1px;
+        font-weight: 500;
+
+        @include hover {
+
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            @include box-shadow;
+        }
+
+        &:active {
+
+            background-color: var(--color-blue);
+            color: var(--color-white);
+            @include box-shadow;
+        }
+    }
+}

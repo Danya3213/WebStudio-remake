@@ -1,0 +1,29 @@
+:root {
+
+    --color-blue: rgb(33, 150, 243);
+    --color-white: rgb(255, 255, 255);
+    --color-white-transparent: rgb(255, 255, 255, 0.3);
+    --color-gray: rgb(117, 117, 117);
+    --color-gray-light: rgb(245, 244, 250);
+    --color-gray-alt: rgba(255, 255, 255, 0.6);
+    --color-gray-icon: rgb(175, 177, 184);
+    --color-black: rgb(33, 33, 33);
+    --color-dark: rgb(47, 48, 58);
+    --color-dark-transparenty: rgba(47, 48, 58, 0.8);
+    --color-dark-transparenty-alt: rgba(255, 255, 255, 0.1);
+    --color-border: rgb(238, 238, 238);
+
+    --border-radius: 4px;
+
+    --font-family-base: 'Roboto';
+
+    --container-width: 1170px;
+    --container-padding-x: 15px;
+
+    --transition-duration: 0.2s;
+
+    --box-shadow-color: 0, 0, 0;
+    --box-shadow-1: 0 2px 1px 0 rgba(var(--box-shadow-color), 0.2);
+    --box-shadow-2: 0 1px 1px 0 rgba(var(--box-shadow-color), 0.14);
+    --box-shadow-3: 0 1px 3px 0 rgba(var(--box-shadow-color), 0.12);
+}

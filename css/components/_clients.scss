@@ -1,0 +1,86 @@
+.clients {
+
+    padding: 94px 0;
+
+    &__inner {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    &__main-title {
+
+        @include typography (36px, 42.2px);
+        letter-spacing: 1px;
+    }
+
+    &__list {
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 30px;
+
+        @media (max-width: 1220px) {
+
+            grid-column-gap: 20px;
+        }
+
+        @include desktop {
+            
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
+
+        @include tablet {
+
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @media (max-width: 400px) {
+
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+        }
+    }
+
+    &__list-item {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 23px 64px;
+        border: 1px solid var(--color-gray-icon);
+        border-radius: var(--border-radius);
+        cursor: pointer;
+
+        @include desktop {
+            
+            padding-block: 25px;
+        }
+
+        @include mobile {
+
+            padding: 21px 82px;
+        }
+
+        @media (max-width: 500px) {
+            
+            padding: 17px 62px;
+        }
+
+        @include hover {
+
+            border-color: var(--color-blue);
+
+            & path {
+
+                fill: var(--color-blue);
+            }
+        }
+    }
+}
