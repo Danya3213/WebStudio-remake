@@ -1048,9 +1048,12 @@ a, button, input, textarea, svg * {
 .projects {
   margin-bottom: 94px;
 }
+.projects__inner {
+  display: flex;
+  justify-content: center;
+}
 .projects__list {
   display: grid;
-  justify-content: center;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -1074,8 +1077,6 @@ a, button, input, textarea, svg * {
 .projects__list-item {
   border: 1px solid var(--color-border);
   transition-duration: 0.4s;
-  max-width: 370px;
-  max-height: 404px;
 }
 @media (hover: hover) {
   .projects__list-item:hover {
